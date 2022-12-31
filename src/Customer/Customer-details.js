@@ -41,7 +41,6 @@ export class CustomerDetails extends LocalizeMixin(LitElement) {
         font-family: monospace;
         text-align: center;
       }
-
       .backbg-btn-color {
         background-color: #ff0000;
         color: white;
@@ -54,13 +53,11 @@ export class CustomerDetails extends LocalizeMixin(LitElement) {
         border-radius: 5px;
         cursor: pointer;
       }
-
       .form-field {
         padding: 10px 5px;
         margin: auto;
         height: 5%;
       }
-
       input {
         width: 20px;
         height: 25px;
@@ -74,7 +71,6 @@ export class CustomerDetails extends LocalizeMixin(LitElement) {
         outline: none;
         box-shadow: 10px grey;
       }
-
       // .error-handle{
       //   border: 2px solid red;
       //   background-color:#f05454;
@@ -231,7 +227,6 @@ export class CustomerDetails extends LocalizeMixin(LitElement) {
               ]}
             >
             </lion-input-amount>
-
             <lion-checkbox-group
               id="terms"
               name="terms"
@@ -257,7 +252,6 @@ export class CustomerDetails extends LocalizeMixin(LitElement) {
                 @click=${this._toEmidetails}
                 >${localize.msg('change-language:back')}
               </lion-button>
-
               <lion-button class="nextbg-btn-color" id="nextbtn" raised
                 >${localize.msg('change-language:next')}</lion-button
               >

@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 import { html, css, LitElement } from 'lit-element';
 import { Required, MinNumber, MaxNumber } from '@lion/form-core';
 import '@lion/input/lion-input.js';
@@ -145,7 +144,6 @@ export class BasicDetails extends LocalizeMixin(LitElement) {
               ),
             ]}"
           ></lion-input>
-
           <lion-input-amount
             type="Number"
             name="amount"
@@ -176,9 +174,7 @@ export class BasicDetails extends LocalizeMixin(LitElement) {
             @keyup=${this._numToWord}
           >
           </lion-input-amount>
-
           <div id="word"></div>
-
           <lion-input-range
             style="max-width: 400px;"
             min="1"
@@ -193,7 +189,6 @@ export class BasicDetails extends LocalizeMixin(LitElement) {
           </lion-input-range>
         </form>
       </lion-form>
-
       <div class="btn-prev-nxt-parent">
         <lion-button class="btn-previous btn" @click=${this._toDashboard}
           >${localize.msg('change-language:btnPrev')}</lion-button
